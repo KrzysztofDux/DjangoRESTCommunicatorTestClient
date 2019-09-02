@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <form id="sendMessageForm" action="http://127.0.0.1:8000/dispatch/send_message" method="post">
+      <label for="author">Your identity</label><br/>
+      <input type="text" id="author" name="author" value=""/><br/>
+      <label for="password">Your password</label><br/>
+      <input type="password" id="password" name="password" value=""/><br/>
+      <label for="addressee">Addressee identity</label><br/>
+      <input type="text" id="addressee" name="addressee" value=""/><br/>
+      <label for="contentField">Message</label><br/>
+      <input id="contentField" type="text" name="content" value=""/><br/>
+      <input type="submit">
+    </form>
+    <div id="log"></div>
+
+    <script type="text/javascript" src="./index.js">
+
+    </script>
+  </body>
+</html>
